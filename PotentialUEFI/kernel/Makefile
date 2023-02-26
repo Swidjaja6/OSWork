@@ -33,6 +33,7 @@ buildimg:
 	mcopy -i bin/MyOS.img ../gnu-efi/x86_64/bootloader/main.efi ::/EFI/BOOT
 	mcopy -i bin/MyOS.img startup.nsh ::
 	mcopy -i bin/MyOS.img $(BUILDDIR)/kernel.elf ::
+	mcopy -i bin/MyOS.img $(BUILDDIR)/zap-light16.psf ::
 
 # -m = RAM e.g. 256M = 256 megabytes of RAM
 # -cpu = Specifies CPU, e.g. qemu64 CPU

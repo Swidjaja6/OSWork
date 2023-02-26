@@ -4,9 +4,9 @@ Sets of commands to compile and run on your system for testing. Change the comme
 Current System: Ubuntu 20.04
 '''
 try: 
-    os.chdir("/home/pokerfacer/SJSUOperatingSystem/PotentialUEFI/gnu-efi/") # Change based on your path and OS
+    os.chdir("/home/pokerfacer/OSWork/PotentialUEFI/gnu-efi/") # Change based on your path and OS
     os.system("make bootloader") 
-    os.chdir("/home/pokerfacer/SJSUOperatingSystem/PotentialUEFI/kernel") # Change based on your path and OS
+    os.chdir("/home/pokerfacer/OSWork/PotentialUEFI/kernel") # Change based on your path and OS
     os.system("make kernel")
     os.system("make buildimg")
     os.system("make run")
